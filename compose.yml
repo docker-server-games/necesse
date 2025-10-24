@@ -16,7 +16,6 @@ services:
     tty: true
     ports:
       - "14159:14159/udp"
-      - "7681:7681"
     volumes:
       - ./local/data:/data
     configs:

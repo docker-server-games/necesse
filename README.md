@@ -63,7 +63,6 @@ services:
     restart: unless-stopped
     ports:
       - "14159:14159/udp"
-      - "7681:7681"
     volumes:
       - server_data:/data
     configs:
