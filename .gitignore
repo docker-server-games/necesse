@@ -1,0 +1,3 @@
+# local tests of /app/build.sh
+/app/server
+/local/**

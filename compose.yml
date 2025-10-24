@@ -1,0 +1,26 @@
+# echo -n NECESSE_PASSWORD: && read -s NECESSE_PASSWORD
+# echo -n TTYD_CREDENTIAL_PASSWORD: && read -s TTYD_CREDENTIAL_PASSWORD
+# export NECESSE_PASSWORD
+# docker-compose up -d
+
+configs:
+  motd.txt:
+    content: |
+      Welcome to my server!
+
+services:
+  server:
+    image: ghcr.io/docker-server-games/necesse:latest
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    ports:
+      - "14159:14159/udp"
+      - "7681:7681"
+    volumes:
+      - ./local/data:/data
+    configs:
+      - motd.txt
+    environment:
+      - NECESSE_PASSWORD=${NECESSE_PASSWORD}
+      - NECESSE_WORLD=my_world
