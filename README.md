@@ -61,6 +61,8 @@ services:
   server:
     image: ghcr.io/docker-server-games/necesse:latest
     restart: unless-stopped
+    stdin_open: true
+    tty: true
     ports:
       - "14159:14159/udp"
     volumes:
