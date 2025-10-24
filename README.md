@@ -20,19 +20,21 @@ More about Necesse hosting configuration: https://necessewiki.com/Multiplayer#Se
 | `latest`            | rolling release, Latest version                                                        |
 | `<version>-<build>` | build names from server files page links. ex v1.0.1 build 20510020 is `1-0-1-20510020` |
 
+https://github.com/docker-server-games/necesse/pkgs/container/necesse
+
 # Env variables binding
 
-| Env variable                 | Server parameters                    | Is mandatory or default value |
-|------------------------------|--------------------------------------|-------------------------------|
-| `NECESSE_PASSWORD`           | `-password`                          | [x]                           |
-| `NECESSE_WORLD`              | `-world`                             | [x]                           |
-| `NECESSE_PORT`               | `-port`                              | [ ] 14159                     |
-| `NECESSE_SLOTS`              | `-slots`                             | [ ] ?                         |
-| `NECESSE_PAUSE_WHEN_EMPTY`   | `-pausewhenempty` `<1/0>`            | [ ] 1                         |
-| `NECESSE_GIVE_CLIENTS_POWER` | `-giveclientspower` `<1/0>`          | [ ] 0                         |
-| `NECESSE_LOGGING`            | `-logging` `<1/0>`                   | [ ] 0                         |
-| `NECESSE_ZIP_SAVES`          | `-zipsaves` `<1/0>`                  | [ ] 1                         |
-| `NECESSE_LANGUAGE`           | `-language`                          | [ ]                           |
+| Env variable                 | Server parameters           | Is mandatory or default value |
+|------------------------------|-----------------------------|-------------------------------|
+| `NECESSE_PASSWORD`           | `-password`                 | [x]                           |
+| `NECESSE_WORLD`              | `-world`                    | [x]                           |
+| `NECESSE_PORT`               | `-port`                     | [ ] 14159                     |
+| `NECESSE_SLOTS`              | `-slots`                    | [ ] 10                        |
+| `NECESSE_PAUSE_WHEN_EMPTY`   | `-pausewhenempty` `<1/0>`   | [ ] 1                         |
+| `NECESSE_GIVE_CLIENTS_POWER` | `-giveclientspower` `<1/0>` | [ ] 0                         |
+| `NECESSE_LOGGING`            | `-logging` `<1/0>`          | [ ] 0                         |
+| `NECESSE_ZIP_SAVES`          | `-zipsaves` `<1/0>`         | [ ] 1                         |
+| `NECESSE_LANGUAGE`           | `-language`                 | [ ]                           |
 
 # Volumes
 
