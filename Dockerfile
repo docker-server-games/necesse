@@ -13,6 +13,8 @@ RUN /app/build.sh
 
 FROM debian:bookworm
 
+LABEL org.opencontainers.image.source="https://github.com/docker-server-games/necesse"
+
 COPY . .
 COPY --from=builder /app /app
 WORKDIR /app
