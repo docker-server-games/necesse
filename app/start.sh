@@ -17,10 +17,6 @@ if [[ -v NECESSE_SLOTS ]]; then
   SERVER_ARGS+=(-slots "${NECESSE_SLOTS}")
 fi
 
-if [[ -v NECESSE_OWNER ]]; then
-  SERVER_ARGS+=(-owner "${NECESSE_OWNER}")
-fi
-
 if [[ -f /motd.txt ]]; then
   SERVER_ARGS+=(-motd "$(cat /motd.txt)")
 fi

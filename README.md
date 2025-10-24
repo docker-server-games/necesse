@@ -1,6 +1,8 @@
-# necesse
+# Necesse
 
 A Necesse Dedicated Server Docker image.
+
+[![Necesse](media/necesse_banner.png)](https://necessegame.com/)
 
 https://necessegame.com/
 
@@ -10,8 +12,6 @@ It's a personal project to run a dedicated server on my docker stack.
 This docker image uses the official dedicated server binary, downloaded from https://necessegame.com/server/.
 
 More about Necesse hosting configuration: https://necessewiki.com/Multiplayer#Server_Parameters
-
-Expose terminal through a webpage with ttyd
 
 https://github.com/tsl0922/ttyd?tab=readme-ov-file
 
@@ -30,7 +30,6 @@ https://github.com/tsl0922/ttyd?tab=readme-ov-file
 | `NECESSE_WORLD`              | `-world`                             | [x]                           |
 | `NECESSE_PORT`               | `-port`                              | [ ] 14159                     |
 | `NECESSE_SLOTS`              | `-slots`                             | [ ] ?                         |
-| `NECESSE_OWNER`              | `-owner`                             | [ ]                           |
 | `NECESSE_PAUSE_WHEN_EMPTY`   | `-pausewhenempty` `<1/0>`            | [ ] 1                         |
 | `NECESSE_GIVE_CLIENTS_POWER` | `-giveclientspower` `<1/0>`          | [ ] 0                         |
 | `NECESSE_LOGGING`            | `-logging` `<1/0>`                   | [ ] 0                         |
@@ -112,3 +111,5 @@ The help command in server and chat is cut with small pages, so it's not easy to
 Here is a list of commands:
 
 https://necessewiki.com/Multiplayer#Server_and_chat_commands
+
+NB: I did not support `-owner` server parameter because I consider it as a security risk.
