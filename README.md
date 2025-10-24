@@ -4,7 +4,7 @@ A Necesse Dedicated Server Docker image.
 
 [![Necesse](media/necesse_banner.png)](https://necessegame.com/)
 
-https://necessegame.com/
+https://store.steampowered.com/app/1169040/Necesse/
 
 This project is not affiliated with Necesse.
 It's a personal project to run a dedicated server on my docker stack.
@@ -12,8 +12,6 @@ It's a personal project to run a dedicated server on my docker stack.
 This docker image uses the official dedicated server binary, downloaded from https://necessegame.com/server/.
 
 More about Necesse hosting configuration: https://necessewiki.com/Multiplayer#Server_Parameters
-
-https://github.com/tsl0922/ttyd?tab=readme-ov-file
 
 # Tag policy
 
